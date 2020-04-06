@@ -1,0 +1,18 @@
+<h2><strong>Using model</strong></h2>
+<div data-sly-use.model="com.theopendle.core.models.demo.DemoModel">
+    <p>Continents</p>
+
+    <!--/* Iterate over continents */-->
+    <ul data-sly-list.continent="${model.continentList}">
+        <li>Name: ${continent.name}</li>
+        <li>Countries:
+
+            <!--/* Iterate over countries */-->
+            <ul data-sly-list.country="${continent.countries}">
+                <li>Name: ${country.name}</li>
+                <li>Code: ${country.code}</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+

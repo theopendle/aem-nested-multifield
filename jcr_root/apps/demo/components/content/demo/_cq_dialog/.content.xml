@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Demo"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <continentsTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Continents"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <continents
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Continents">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./continents">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <name
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Name"
+                                            name="./continentName"/>
+                                        <countries
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldLabel="Countries">
+                                            <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./countries">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <name
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Name"
+                                                        name="./countryName"/>
+                                                    <code
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Code"
+                                                        name="./code"/>
+                                                </items>
+                                            </field>
+                                        </countries>
+                                    </items>
+                                </field>
+                            </continents>
+                        </items>
+                    </continentsTab>
+                    <productsTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Products"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <products
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Products">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./products">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <name
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Name"
+                                            name="./productName"/>
+                                    </items>
+                                </field>
+                            </products>
+                        </items>
+                    </productsTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

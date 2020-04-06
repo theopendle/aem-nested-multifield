@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Content-Package-Roots: /apps/demo/components/content/demo,/apps/demo/c
+ omponents/content/demoHtl
+Content-Package-Type: application
+Content-Package-Id: my_packages:aem-nested-multifield
+

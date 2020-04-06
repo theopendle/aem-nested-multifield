@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2020-04-06T14:55:03.787+02:00"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2020-04-06T14:55:03.787+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-6.5.4.0"
+    group="my_packages"
+    lastUnwrapped="{Date}2020-04-06T14:55:03.787+02:00"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2020-04-06T14:55:03.787+02:00"
+    lastWrappedBy="admin"
+    name="aem-nested-multifield"
+    version="">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/demo/components/content/demo"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/demo/components/content/demoHtl"
+            rules="[]"/>
+    </filter>
+</jcr:root>
